@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>平安成电智慧通行</title>
+</head>
+<script>
+    var time=300;
+    setInterval(function(){
+        time=time-1;
+        document.getElementById("left").innerHTML="二维码剩余有效时间"+time+"秒";
+    },1000)
+</script>
+<body>
+    <block>
+        <div align="center" style="font-size:24px">行人二维码</div>
+        <br>
+        <div align="center">
+            <image src="images/QRCode.png" mode="aspectFill"> </image>
+        </div>
+        <br>
+        <div align="center" style="font-size:18px" id=left>二维码剩余有效时间300秒</div>
+        <br>
+        <div align="center">
+            <image src="images/CodeRule.png" width="140px" mode="aspectFill"> </image>
+        </div>
+    </block>
+</body>
